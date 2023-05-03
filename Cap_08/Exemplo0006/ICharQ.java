@@ -1,6 +1,6 @@
 package Cap_08.Exemplo0006;
 
-    // Interface de fila de caracters
+    // Interface de fila de caracteres
 
 public interface ICharQ {
 
