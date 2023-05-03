@@ -1,4 +1,4 @@
-package Cap_08.exemplo0006;
+package Cap_08.Exemplo0006;
 
 // Fila dinâmica
 public class DynQueue implements ICharQ {

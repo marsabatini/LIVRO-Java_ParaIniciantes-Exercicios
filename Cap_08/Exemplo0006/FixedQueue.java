@@ -1,4 +1,4 @@
-package Cap_08.exemplo0006;
+package Cap_08.Exemplo0006;
 
     // Classe de fila de tamanho fixo para caracteres.
 
