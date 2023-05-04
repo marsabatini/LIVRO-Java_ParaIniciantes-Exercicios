@@ -3,6 +3,8 @@ package Cap_09.Exemplo0001;
     // O programa a seguir gera propositalmente uma excecão em um array.
     // Em seguida, trata essa excecão.
 
+    // Captura a excecão ArrayIndexOutOfBoundsException
+
 public class ExcDemo1 {
 
     public static void main(String args[]){
