@@ -1,7 +1,7 @@
 package Cap_09.Exemplo0006;
 
     /*
-        O autor demonstra a possibilidade de se utilizar
+        Schildt demonstra a possibilidade de se utilizar
         vários catchs para um único try.
         Porém, eles devem capturar excecões diferentes,
         como demonstra o programa abaixo, capturando o
