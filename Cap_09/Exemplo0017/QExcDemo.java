@@ -11,7 +11,7 @@ public class QExcDemo {
         try{
             // excede a fila
             for(i = 0; i < 11; i++){
-                System.out.println("Attempting to store: " +
+                System.out.print("Attempting to store: " +
                         (char) ('A' + i));
                 q.put((char) ('A' + i));
                 System.out.println(" - OK");
@@ -25,7 +25,7 @@ public class QExcDemo {
         try{
             // tenta acessar um elemento da fila vazia
             for(i = 0; i < 11; i++){
-                System.out.println("Getting next char: ");
+                System.out.print("Getting next char: ");
                 ch = q.get();
                 System.out.println(ch);
             }
