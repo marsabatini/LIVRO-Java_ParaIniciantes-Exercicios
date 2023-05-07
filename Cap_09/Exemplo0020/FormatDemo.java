@@ -16,5 +16,7 @@ public class FormatDemo {
         System.out.print("Digite seu nome: ");
         String visitante = entrada.nextLine();
         System.out.format("Prazer em conhecê-lx %s", visitante);
+
+        entrada.close();
     }
 }
