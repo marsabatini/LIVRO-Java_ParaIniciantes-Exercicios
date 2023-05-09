@@ -3,6 +3,7 @@ package Cap_09.Exemplo0036;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Help {
 
@@ -45,5 +46,21 @@ public class Help {
         }
 
         return false; // tópico não encontrado
+    }
+
+    // Acessa um tópico da Ajuda
+    String getSelection(){
+        String topic = "";
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Enter topic: ");
+
+        try{
+            topic = br.readLine();
+        } catch(IOException exception){
+            System.out.println("Error reading console.");
+        }
+        return topic;
     }
 }
