@@ -17,7 +17,8 @@ public class MoreThreads2 {
             } catch(InterruptedException exception){
                 System.out.println("Main thread interrupted");
             }
-        }
+        } while(mt1.thrd.isAlive() || mt2.thrd.isAlive() || mt3.thrd.isAlive());
 
+        System.out.println("Main tread ending.");
     }
 }
