@@ -6,7 +6,7 @@ public class TickTock {
 
     String state;       // contém o estado do relógio
 
-    synchronized void thick(boolean running){
+    synchronized void tick(boolean running){
         if(!running){
             state = "ticked";
             notify();       // notifica qualquer thread que estiver esperando
