@@ -5,5 +5,5 @@ package Cap_11.Exemplo0004;
 public enum Transport {
 
     CAR, TRUCK, AIRPLANE, TRAIN, BOAT
-    
+
 }
