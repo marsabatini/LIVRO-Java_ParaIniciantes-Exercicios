@@ -1,8 +1,8 @@
-package Cap_12.Exemplo0007;
+package Cap_12.Exemplo0008;
 
     // Implementa Containment usando um array.
 
-import Cap_12.Containment;
+import Cap_12.Exemplo0008.Containment;
 
 // Toda classe que implementa uma interface
 // genérica também deve ser genérica.

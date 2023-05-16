@@ -1,4 +1,4 @@
-package Cap_12;
+package Cap_12.Exemplo0008;
 
     // Exemplo de interface genérica
 
