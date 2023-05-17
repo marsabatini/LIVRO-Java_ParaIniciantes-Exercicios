@@ -14,6 +14,6 @@ public class GenArrays {
 
         // Correto
         Gen<?>[] gens = new Gen<?>[10];
-        
+
     }
 }
