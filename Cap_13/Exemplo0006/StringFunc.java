@@ -5,5 +5,5 @@ package Cap_13.Exemplo0006;
 public interface StringFunc {
 
     String func(String str);
-    
+
 }
