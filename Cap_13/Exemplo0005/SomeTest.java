@@ -6,5 +6,5 @@ package Cap_13.Exemplo0005;
 public interface SomeTest<T> {
 
     boolean test(T n, T m);
-    
+
 }
