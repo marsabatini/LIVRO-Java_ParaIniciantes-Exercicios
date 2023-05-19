@@ -6,5 +6,5 @@ package Cap_13.Exemplo0008;
 public interface IntPredicate {
 
     boolean test(int n);
-    
+
 }
