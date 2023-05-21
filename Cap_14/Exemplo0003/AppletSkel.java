@@ -10,6 +10,7 @@ import java.applet.*;
 </applet>
 */
 
+/*
 @Deprecated
 public class AppletSkel extends Applet{
 
@@ -41,3 +42,5 @@ public class AppletSkel extends Applet{
         // volta a exibir o conteúdo da janela
     }
 }
+
+ */

@@ -19,6 +19,7 @@ import java.applet.*;
 */
 
 
+/*
 @Deprecated
 public class Banner extends Applet implements Runnable{
 
@@ -68,6 +69,8 @@ public class Banner extends Applet implements Runnable{
         g.drawString(msg, 50, 30);
     }
 }
+
+ */
 
 
 

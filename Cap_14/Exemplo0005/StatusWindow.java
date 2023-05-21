@@ -10,6 +10,7 @@ import java.applet.*;
 </applet>
 */
 
+/*
 @Deprecated
 public class StatusWindow extends Applet {
 
@@ -20,7 +21,7 @@ public class StatusWindow extends Applet {
         g.showStatus("This is show in the status window.");
     }
 }
-
+ */
 
 
 
