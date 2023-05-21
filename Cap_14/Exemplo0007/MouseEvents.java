@@ -11,6 +11,7 @@ import java.applet.*;
 </applet>
  */
 
+/*
 @Deprecated
 public class MouseEvents extends Applet implements MouseListener, MouseMotionListener{
 
@@ -46,4 +47,45 @@ public class MouseEvents extends Applet implements MouseListener, MouseMotionLis
         repaint();
     }
 
+    // tratava o posicionamento de botão
+    public void mousePressed(MouseEvent me){
+        // salvava as coordenadas
+        mouseX = me.getX();
+        mouseY = me.getY();
+        msg = "Down";
+        repaint();
+    }
+
+    // tratava da solutra do botão
+    public void mouseReleased(MouseEvent me){
+        // salvava as coordenadas
+        mouseX = me.getX();
+        mouseY = me.getY();
+        msg = "Up";
+        repaint();
+    }
+
+    // tratava o mouse sendo arrastado
+    public void mouseDragged(MouseEvent me){
+        // salvava as coordenadas
+        mouseX = me.getX();
+        mouseY = me.getY();
+        msg = "*";
+        showStatus("Dragging mouse at " + mouseX + ", " + mouseY);
+        repaint();
+    }
+
+    // tratava o mouse sendo movido
+    public void mouseDragged(MouseEvent me){
+        // exibia as coordenadas
+        showStatus("Moving mouse at " + me.getX() + ", " + me.getY());
+        repaint();
+    }
+
+    // exibia a msg na janela do applet no local (x, y) atual
+    public void paint(Graphics g){
+        g.drawString(msg, mouseX, mouseY);
+    }
 }
+
+ */
