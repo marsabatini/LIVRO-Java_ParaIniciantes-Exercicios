@@ -18,7 +18,7 @@ public class SwingDemo {
         jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // Cria um rótulo baseado em texto.
-        JLabel jLabel = new JLabel("Swing defines the modern Java GUI.");
+        JLabel jLabel = new JLabel("  Swing defines the modern Java GUI.");
 
         // Adiciona o rótulo ao painel de conteúdo.
         jfrm.add(jLabel);
@@ -28,6 +28,13 @@ public class SwingDemo {
     }
 
     public static void main(String[] args) {
-        
+
+        // Cria o quadro na thread de despacho de evento.
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new SwingDemo();
+            }
+        });
     }
 }
