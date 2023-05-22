@@ -4,6 +4,7 @@ package Cap_15.Exemplo0004;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 public class CBDemo implements ItemListener {
@@ -53,5 +54,44 @@ public class CBDemo implements ItemListener {
 
         // Exibe o quadro
         jfrm.setVisible(true);
+    }
+
+    // Esse é o tratador das caixas de selećão
+    public void itemStateChanged(ItemEvent ie){
+
+        String str = "";
+
+        // Obtém uma referência à caixa de selećão que causou o evento
+        JCheckBox cb = (JCheckBox) ie.getItem();
+
+        // Relata que caixa de selećão mudou
+        if(cb.isSelected())
+            jlabChanged.setText(cb.getText() + " was just selected.");
+        else
+            jlabChanged.setText(cb.getText() + " was just cleared.");
+
+        // Relata todas as caixas selecionadas
+        if(jcbAlpha.isSelected()){
+            str += "Alpha";
+        }
+        if(jcbBeta.isSelected()){
+            str += "Beta";
+        }
+        if(jcbGamma.isSelected()){
+            str += "Gamma";
+        }
+
+        jlabSelected.setText("Selected check boxes: " + str);
+    }
+
+    public static void main(String args[]){
+
+        // Cria o quadro na thread de despacho de evento.
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new CBDemo();
+            }
+        });
     }
 }
