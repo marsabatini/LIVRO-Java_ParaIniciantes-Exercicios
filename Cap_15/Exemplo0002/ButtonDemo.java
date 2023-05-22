@@ -2,9 +2,11 @@ package Cap_15.Exemplo0002;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
-public class ButtonDemo {
+public class ButtonDemo implements ActionListener {
+
+    JLabel jlab;
 
     ButtonDemo(){
 
@@ -25,20 +27,40 @@ public class ButtonDemo {
         JButton jButtonDown = new JButton("Down");
 
         // Adiciona ouvintes de aćão
-        jButtonUp.addActionListener((ActionListener) this);
-        jButtonDown.addActionListener((ActionListener) this);
+        jButtonUp.addActionListener(this);
+        jButtonDown.addActionListener(this);
 
         // Adiciona os botões ao painel de conteúdo.
         jfrm.add(jButtonUp);
         jfrm.add(jButtonDown);
 
         // Cria um rótulo.
-        JLabel jlab = new JLabel("Press a button");
+        jlab = new JLabel("Press a button");
 
         // Adiciona o rótulo ao quadro.
         jfrm.add(jlab);
 
         // Exibe o quadro.
         jfrm.setVisible(true);
+    }
+
+    // Trata eventos de botão
+    public void actionPerformed(ActionEvent ae){
+        if(ae.getActionCommand().equals("Up")){
+            jlab.setText("You pressed Up.");
+        } else {
+            jlab.setText("You pressed Down.");
+        }
+    }
+
+    public static void main(String args[]){
+
+        // Cria o quadro na thread de despecho de evento.
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new ButtonDemo();
+            }
+        });
     }
 }
