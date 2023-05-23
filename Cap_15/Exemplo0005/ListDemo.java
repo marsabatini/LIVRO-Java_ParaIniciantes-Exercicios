@@ -2,8 +2,6 @@ package Cap_15.Exemplo0005;
 
     // Demonstra uma JList simples
 
-import Cap_12.Exemplo0005.D;
-
 import javax.swing.*;
 import javax.swing.event.*;
 import java.awt.*;
