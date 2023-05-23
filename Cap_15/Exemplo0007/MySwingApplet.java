@@ -36,4 +36,27 @@ public class MySwingApplet extends JApplet{
     }
 
     // Esse applet não precisava sobrepor start(), stop() e destroy()
+    private void makeGUI(){
+
+        JFrame jFrame = new JFrame("Applet");
+        jFrame.setLayout(new FlowLayout());
+
+        jbtnUp = new JButton("Up");
+        jbtnDown = new JButton("Down");
+
+        jbtnUp.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                jLabel.setText("You pressed down.");
+            }
+        });
+
+        jFrame.add(jbtnUp);
+        jFrame.add(jbtnDown);
+
+        jLabel = new JLabel("Press a button");
+
+        jFrame.add(jLabel);
+
+    }
 }
