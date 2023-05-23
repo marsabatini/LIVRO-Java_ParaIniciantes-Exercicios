@@ -61,4 +61,28 @@ public class ListDemo implements ListSelectionListener{
         jfrm.setVisible(true);
     }
 
+    // Trata eventos de selećão da lista
+    public void valueChanged(ListSelectionEvent le){
+
+        // Obtém o índice do item alterado.
+        int idx = jlst.getSelectedIndex();
+
+        // Exibe a selećão, se um item for selecionado.
+        if(idx != -1){
+            jlab.setText("Current selection: " + names[idx]);
+        } else {
+            jlab.setText("Please, choose a name.");
+        }
+    }
+
+    public static void main(String args[]){
+
+        // Cria o quadro na thread de desepacho de evento
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new ListDemo();
+            }
+        });
+    }
 }
