@@ -1,9 +1,12 @@
-package Cap_15.Exemplo0006;
+package Cap_15.Exemplo0008;
 
-    /*
-        Tente Isto 16-1
+ /*
+        Tente Isto 16-2
 
         Utilitário de comparaćão de arquivos baseado em Swing.
+
+        Esta versão tem uma caixa de selećão que faz o
+        local da primeira discrepância ser exibido.
      */
 
 import javax.swing.*;
@@ -23,13 +26,15 @@ public class SwingFC implements ActionListener{
     JLabel jlabFirst, jlabSecond;
     JLabel jlabResult;
 
+    JCheckBox jcbLoc;
+
     SwingFC(){
 
         JFrame jfrm = new JFrame("Compare File");
 
         jfrm.setLayout(new FlowLayout());
 
-        jfrm.setSize(200, 190);
+        jfrm.setSize(200, 220);
 
         jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -47,10 +52,14 @@ public class SwingFC implements ActionListener{
         jlabSecond = new JLabel("Second file: ");
         jlabResult = new JLabel("");
 
+        // Cria a caixa de selećão
+        jcbLoc = new JCheckBox("Show position of mismatch");
+
         jfrm.add(jlabFirst);
         jfrm.add(jtfFirst);
         jfrm.add(jlabSecond);
         jfrm.add(jtfSecond);
+        jfrm.add(jcbLoc);
         jfrm.add(jbtnComp);
         jfrm.add(jlabResult);
 
@@ -60,6 +69,7 @@ public class SwingFC implements ActionListener{
     public void actionPerformed(ActionEvent ae){
 
         int i = 0, j = 0;
+        int count = 0;
 
         if(jtfFirst.getText().equals("")){
             jlabResult.setText("First file name missing.");
@@ -78,10 +88,15 @@ public class SwingFC implements ActionListener{
                 j = f2.read();
                 if(i != j)
                     break;
+                count++;
             } while(i != -1 && j != -1);
 
             if(i != j){
-                jlabResult.setText("Files are not the same.");
+                if(jcbLoc.isSelected()){
+                    jlabResult.setText("Files differ at location." + count);
+                } else {
+                    jlabResult.setText("Files are not the same.");
+                }
             } else
                 jlabResult.setText("Files compare equal.");
         } catch(IOException exc){
