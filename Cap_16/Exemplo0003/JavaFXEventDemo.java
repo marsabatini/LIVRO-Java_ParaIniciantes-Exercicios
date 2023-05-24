@@ -3,8 +3,11 @@ package Cap_16.Exemplo0003;
     // Demonstra eventos e botões de JavaFX
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
@@ -43,11 +46,28 @@ public class JavaFXEventDemo extends Application {
         // Cria um rótulo
         Label response = new Label("Push a Button.");
 
-        //
+        // Cria dois botões de aćão
+        Button btnUp = new Button("Up");
+        Button btnDown = new Button("Down");
 
+        // Trata os eventos de acã́o do botão Up.
+        btnUp.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                response.setText("You pressed Up.");
+            }
+        });
+
+        // Trata os eventos de acã́o do botão Down.
+        btnDown.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                response.setText("You pressed Down.");
+            }
+        });
 
         // Adiciona o rótulo ao grafo de cena
-        rootNode.getChildren().add(btnUp, btnDown, response);
+        rootNode.getChildren().addAll(btnUp, btnDown, response);
 
         // Exibe o palco
         myStage.show();
