@@ -2,6 +2,7 @@ package Cap_16.Exemplo0002;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
@@ -31,6 +32,10 @@ public class JavaFXLabelDemo extends Application {
         myStage.setScene(myScene);
 
         // Cria um rótulo
+        Label myLabel = new Label("JavaFX is a powerful GUI.");
+
+        // Adiciona o rótulo ao grafo de cena
+        rootNode.getChildren().add(myLabel);
 
         // Exibe o palco
         myStage.show();
