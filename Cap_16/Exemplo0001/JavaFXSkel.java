@@ -14,7 +14,7 @@ public class JavaFXSkel extends Application{
 
         System.out.println("Lauching JavaFX application");
 
-        // Inicializa o aplicativo JavaFx chamado launch()
+        // Inicializa o aplicativo JavaFx chamando launch()
         launch(args);
     }
 
