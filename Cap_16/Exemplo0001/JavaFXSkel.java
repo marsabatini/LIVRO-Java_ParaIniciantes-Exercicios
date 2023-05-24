@@ -2,7 +2,7 @@ package Cap_16.Exemplo0001;
 
     // ESboco de um aplicativo JavaFX
 
-/*
+
 import javafx.application.*;
 import javafx.scene.*;
 import javafx.stage.*;
@@ -47,4 +47,4 @@ public class JavaFXSkel extends Application{
     }
 }
 
- */
+
