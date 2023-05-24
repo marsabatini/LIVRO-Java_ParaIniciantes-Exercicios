@@ -2,6 +2,7 @@ package Cap_16.Exemplo0001;
 
     // ESboco de um aplicativo JavaFX
 
+/*
 import javafx.application.*;
 import javafx.scene.*;
 import javafx.stage.*;
@@ -19,6 +20,31 @@ public class JavaFXSkel extends Application{
 
     // Sobrepõe o método start()
     public void start(Stage myStage){
-        
+
+        System.out.println("Inside the start() method.");
+
+        // Fornece um título para o palco.
+        myStage.setTitle("JavaFX Skeleton.");
+
+        // Cria um nó raiz.
+        // Nesse caso, um layout de fluxo é usado,
+        // mas existem várias alternativas
+        FlowPane rootNode = new FlowPane();
+
+        // Cria uma cena
+        Scene myScene = new Scene(rootNode, 300, 200);
+
+        // Define a cena no palco
+        myStage.setScene(myScene);
+
+        // Exibe o palco
+        myStage.show();
+    }
+
+    // Sobrepõe o método stop()
+    public void stop(){
+        System.out.println("Inside the stop() method.");
     }
 }
+
+ */
