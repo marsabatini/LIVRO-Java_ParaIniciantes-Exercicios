@@ -40,3 +40,12 @@ Claro que, mesmo com tanto esforço e erudição, isso não é capaz de explicar
 Com absoluta certeza, essa é uma obra rica não apenas para se iniciar os estudos sobre Java, mas, para se ter em sua biblioteca, como uma fonte de pesquisa segura e ampla.
 
 
+
+
+###### Author: Marco Sabatini
+[![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcoantoniosabatini/)
+[![Github](http://img.shields.io/badge/github-%231877F2.svg?&style=for-the-badge&logo=github&logoColor=white&color=black)](https://github.com/marsabatini)
+----------
+![version](https://img.shields.io/badge/version-1.0.4-blue)
+
+
