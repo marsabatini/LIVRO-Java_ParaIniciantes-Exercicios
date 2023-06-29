@@ -21,6 +21,18 @@ Afinal, o que é aquela palavrinha reservada "this" que sempre usamos, como ela 
 
 Enfim, Schildt vai além de explicar "o que é" e "como funciona" o polimorfismo, a herança, a classe e outros pilares das linguagens orientadas a objetos. Ele demonstra que Java é um planeta com uma biodiversidade única e nos instiga a conhecer profundamente estruturas de dados, condicionais, loops, sobrecargas, construtores, etc.
 
-Claro que, mesmo com tanto esforço e erudição, isso não é capaz de explicar o funcionamento completo dessa linguagem em suas mais diversas bibliotecas e utilizações. O próprio autor nos lembra disso constantemente, indicando outras obras e portas para continuarmos nossos estudos.
+Claro que, mesmo com tanto esforço e erudição, isso não é capaz de explicar o funcionamento completo dessa linguagem em suas mais diversas classes/pacotes e utilizações. O próprio autor nos lembra disso constantemente, indicando outras obras e portas para continuarmos nossos estudos. Mas, deve-se notar que o livro aborda com primazia:
+
+
+   - [x] Tipos de dados e operadores
+   - [x] Instruções de controle
+   - [x] Classes, objetos e métodos
+   - [x] Herança
+   - [x] Pacotes e interfaces
+   - [x] Tratamento de exceções
+   - [x] I/O
+   - [x] Threads
+   - [x] Enumeração, autoboxing e importação estática
+   - [x] Entre muitos outros assuntos.
 
 
