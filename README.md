@@ -17,4 +17,10 @@ A ideia é, basicamente, reproduzir os códigos desse livro a fim de aprendermos
 
 Apesar de possuir um grande horinzonte temático, esse livro se aprofunda em pontos importantíssimos, explicando ao(a) leitor(a) o funcionamento da linguagem e de termos e códigos que usamos cotidianamente sem percebermos a riqueza conceitual que está em seu plano de fundo.
 
-Desse modo, Schildt vai além de explicar "o que é" e "como funciona" o polimorfismo, a herança, a classe e outros pilares das linguagens orientadas a objetos. Ele demonstra que Java é um planeta com uma biodiversidade única e nos instiga a conhecer profundamente estruturas de dados, sobrecargas, construtores, etc. 
+Afinal, o que é aquela palavrinha reservada "this" que sempre usamos, como ela funciona realmente e, se muitas vezes, ela é opcional no código, por que a usamos? O que é uma sobrecarga e por que até mesmo o sinal +, como se assumisse outros significados, também pode ser sobrecarregado?
+
+Enfim, Schildt vai além de explicar "o que é" e "como funciona" o polimorfismo, a herança, a classe e outros pilares das linguagens orientadas a objetos. Ele demonstra que Java é um planeta com uma biodiversidade única e nos instiga a conhecer profundamente estruturas de dados, condicionais, loops, sobrecargas, construtores, etc.
+
+Claro que, mesmo com tanto esforço e erudição, isso não é capaz de explicar o funcionamento completo dessa linguagem em suas mais diversas bibliotecas e utilizações. O próprio autor nos lembra disso constantemente, indicando outras obras e portas para continuarmos nossos estudos.
+
+
