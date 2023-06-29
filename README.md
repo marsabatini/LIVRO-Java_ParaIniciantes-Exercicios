@@ -36,3 +36,7 @@ Claro que, mesmo com tanto esforço e erudição, isso não é capaz de explicar
    - [x] Entre muitos outros assuntos.
 
 
+
+Com absoluta certeza, essa é uma obra rica não apenas para se iniciar os estudos sobre Java, mas, para se ter em sua biblioteca, como uma fonte de pesquisa segura e ampla.
+
+
